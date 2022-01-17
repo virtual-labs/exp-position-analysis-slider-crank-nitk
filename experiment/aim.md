@@ -1,1 +1,1 @@
-### Aim of the experiment
+To determine the position of the slider crank mechanism given, thereby to find the swing angle of connecting rod and minimum bore diameter required for a given I/r ratio (crank and connecting rod).
