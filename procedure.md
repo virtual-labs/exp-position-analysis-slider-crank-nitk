@@ -1,0 +1,2 @@
+* The simulation is of a slider crank mechanism without any offset i.e. the axis of sliding element passes through the crank center.
+* Change the parameters under variables section and observe the motion of the slider crank mechanism.
