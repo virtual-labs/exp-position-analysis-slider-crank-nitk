@@ -1,39 +1,108 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "For l/r ratio for an IC engine with 10cm crankshaft and 30cm connecting rod is?",
+        "answers": {
+          "a": "3",
+          "b": "1/3",
+          "c": "4",
+          "d": "None of these"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "a",
+        "difficulty": ""
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "For a given input crank angle how many positions of the slider are possible for fixed link lengths?",
+        "answers": {
+          "a": "Depends on link length",
+          "b": "More than 2",
+          "c": "At least 2",
+          "d": "Only 1"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "d",
+        "difficulty": ""
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question": "How many revolute joints does a slider crank mechanism have?",
+        "answers": {
+          "a": "4",
+          "b": "3",
+          "c": "1",
+          "d": "0"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "b",
+        "difficulty": ""
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "How many prismatic joints does a slider crank mechanism have",
+        "answers": {
+          "a": "3",
+          "b": "0",
+          "c": "1",
+          "d": "4"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "c",
+        "difficulty": ""
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "Tangential Acceleration at a point on a link ?",
+        "answers": {
+          "a": "is perpendicular to the link",
+          "b": "is parallel to the link",
+          "c": "is at 45<sup>o</sup> to the link in the direction of motion",
+          "d": "None of these"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "a",
+        "difficulty": ""
+      },
+      {
+        "question": "At which of the following crank angle positions is the slider at its extreme position?",
+        "answers": {
+          "a": "120<sup>o</sup>",
+          "b": "90<sup>o</sup>",
+          "c": "30<sup>o</sup>",
+          "d": "180<sup>o</sup>"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "d",
+        "difficulty": ""
+      }
+    ]
+  }
+  

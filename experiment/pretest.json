@@ -1,39 +1,92 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question":"Measured from +X-axis what is the angular position of connecting rod when at a crank position of 30<sup>o</sup> the crank shaft is perpendicular to connecting rod ?",
+        "answers": {
+          "a": "150<sup>o</sup>",
+          "b": "60<sup>o</sup>",
+          "c": "160<sup>o</sup>",
+          "d": "120<sup>o</sup>"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "d",
+        "difficulty": ""
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "What is the max distance travelled by slider for a slider crank mechanism with crank length 10cm?",
+        "answers": {
+          "a": "20cm",
+          "b": "10cm",
+          "c": "5cm",
+          "d": "None of these"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "a",
+        "difficulty": ""
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question": "What is the angle swept by connecting rod for l/r ratio 2?",
+        "answers": {
+          "a": "30<sup>o</sup>",
+          "b": "90<sup>o</sup>",
+          "c": "60<sup>o</sup>",
+          "d": "Data insufficient"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "c",
+        "difficulty": ""
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "For a 5cm crank shaft rotating a 3rpm what is the average speed in cm/s of the slider?",
+        "answers": {
+          "a": "2",
+          "b": "1",
+          "c": "4",
+          "d": "3"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "b",
+        "difficulty": ""
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "At which of the following crank angle position pairs is the slider at the same location",
+        "answers": {
+          "a": "30<sup>o</sup>,330<sup>o</sup>",
+          "b": "90<sup>o</sup>,270<sup>o</sup>",
+          "c": "120<sup>o</sup>,240<sup>o</sup>",
+          "d": "All of these"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "d",
+        "difficulty": ""
+      }
+      
+    ]
+  }
+  
