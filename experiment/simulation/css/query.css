@@ -10,26 +10,27 @@ em:current font size
 /* **************************** */
 
 @media (min-width: 1200px) {
-  #commentboxleft {
+  #commentboxleft{
     position: absolute;
     top: 350px;
   }
-  #commentboxright {
+  #commentboxright{
     position: absolute;
     left: 450px;
-    bottom: 20px;
+    bottom:20px;
   }
-
-  #canvas-container {
+ 
+  #canvas-container{
     position: relative;
     left: 100px;
     bottom: 5px;
-    height: 400px;
+    height:400px;
   }
-  #variables {
+  #variables{
     width: 200%;
   }
 }
+
 
 /* **************************** */
 /* Below 1200px (Lanscape Tablets) */
@@ -67,17 +68,17 @@ em:current font size
     width: 3rem;
     height: 2.8rem;
   }
-  #variables {
+  #variables{
     width: 200%;
   }
-  #commentboxleft {
+  #commentboxleft{
     position: absolute;
     top: 350px;
   }
-  #commentboxright {
+  #commentboxright{
     position: absolute;
     /* left: 450px; */
-    bottom: 5px;
+    bottom:5px;
   }
 }
 
@@ -155,11 +156,12 @@ em:current font size
     height: 100%;
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
+  
   }
-  .copyright {
-    margin-bottom: 65px;
+  .copyright{
+    margin-bottom: 65px; 
   }
-  #variables {
+  #variables{
     width: 100%;
   }
 }
@@ -182,11 +184,11 @@ em:current font size
     margin-left: -20px;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
-  #variables {
+  #variables{
     width: 100%;
   }
-  .copyright {
-    margin-bottom: 70px;
+  .copyright{
+    margin-bottom: 70px; 
   }
 }
 
@@ -210,7 +212,7 @@ em:current font size
   }
   .logo-div {
     width: 8.5rem;
-    /* padding: 0.8rem 0 0.8rem 3.3rem; */
+    padding: 0.8rem 0 0.8rem 3.3rem;
   }
   .main__task-div:nth-child(4) {
     margin-bottom: 6rem;
@@ -229,11 +231,11 @@ em:current font size
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
-  #variables {
+  #variables{
     width: 100%;
   }
-  .copyright {
-    margin-bottom: 70px;
+  .copyright{
+    margin-bottom: 70px; 
   }
 }
 
@@ -242,17 +244,13 @@ em:current font size
 /* **************************** */
 @media (max-width: 34em) {
   .container {
-    /* padding: 0.5rem; */
+    padding: 0.5rem;
     gap: 1rem;
   }
 
   .title-div h1 {
     padding: 0.2rem;
     font-size: 1.6rem;
-  }
-
-  .logo-div {
-    width: 4rem;
   }
   .div__control {
     gap: 2rem;
@@ -271,8 +269,8 @@ em:current font size
     display: inline-block;
     font-size: 1.5rem;
   }
-  .copyright {
-    margin-bottom: 60px;
+  .copyright{
+    margin-bottom: 60px; 
   }
   .main {
     gap: 0.5rem;
@@ -298,7 +296,7 @@ em:current font size
   .tooltip {
     font-size: 1rem;
   }
-  #variables {
+  #variables{
     width: 100%;
   }
 }
