@@ -87,11 +87,11 @@
               >
               <span>Variables</span>
           </li>
-          <li class="tool-list">
+          <li class="tool-list" title="Play/Pause">
             <img id="playpausebutton" onclick="simstate()" src="images/bluepausedull.svg" alt="" class="icons"/>
             <span class="playPause">Pause</span>
           </li>
-          <li class="tool-list">
+          <li class="tool-list" title="Rotate">
             <img id="rotationbutton" onclick="rotstate()" src="images/bluecwdull.svg" alt="" class="icons"/>
             <span class="playPause">Rotate</span>
           </li>
@@ -125,26 +125,26 @@
                 
                 <div class="var-div">
                   <label for="r2spinner">r</label>
-                  <input class="var-spinner" id="r2spinner" name="value" />
+                  <input class="var-spinner"  type="number"  id="r2spinner" name="value" />
                   <div class="var-slider" id="r2slider"></div>
                   <span class="unit">cm</span>
                 </div>
                 
                 <div class="var-div">
                   <label for="r3spinner">l</label>
-                  <input class="var-spinner" id="r3spinner" name="value" />
+                  <input class="var-spinner"  type="number"  id="r3spinner" name="value" />
                   <div class="var-slider" id="r3slider"></div>
                   <span class="unit">cm</span>
                 </div>
                 <div class="var-div"  id = "theta2set">
                   <label for="theta2spinner"><p title='Input Angle'>&theta; </p></label>
-                  <input class="var-spinner" id="theta2spinner" name="value" />
+                  <input class="var-spinner"  type="number"  id="theta2spinner" name="value" />
                   <div class="var-slider" id="theta2slider"></div>
                   <span class="unit">&deg; </span>
                 </div>
                 <div class="var-div"  id = "omega2set">
                   <label for="omega2spinner"><p title='Input Angular Velocity'>&omega; </p></label>
-                  <input class="var-spinner" id="omega2spinner" name="value" />
+                  <input class="var-spinner"  type="number"  id="omega2spinner" name="value" />
                   <div class="var-slider" id="omega2slider"></div>
                   <span class="unit">rad/s</span>
                 </div>

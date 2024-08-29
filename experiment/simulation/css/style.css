@@ -127,6 +127,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 .tool-list span {
   display: inline-block;
@@ -180,6 +181,11 @@ h1 {
   overflow: hidden;
   scroll-behavior: smooth;
   padding: 0 0.5rem 0 0;
+}
+
+#commentboxright{
+  position: relative;
+  top: 382px;
 }
 
 .main__task-div {
