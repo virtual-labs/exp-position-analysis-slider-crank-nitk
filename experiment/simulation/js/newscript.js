@@ -110,93 +110,161 @@ $('#omega2spinner').spinner("value", 1);
 
 // Initialise and Monitor variable containing user inputs of system parameters.
 //change #id and repeat block for new variable. Make sure new <div> with appropriate #id is included in the markup
-function varchange()
-{
-//Variable r2 slider and number input types
-$('#r2slider').slider({ max : 60, min : 20, step : 2 });		// slider initialisation : jQuery widget
-$('#r2spinner').spinner({ max : 60, min : 20, step : 2 });		// number initialisation : jQuery widget			
-// monitoring change in value and connecting slider and number
-// setting trace point coordinate arrays to empty on change of link length
-$( "#r2slider" ).on( "slide", function( e, ui ) { $('#r2spinner').spinner("value",ui.value); ptx=[]; pty=[]; r2change(); } );
-$( "#r2spinner" ).on( "spin", function( e, ui ) { $('#r2slider').slider("value",ui.value); ptx=[]; pty=[]; } );
-$( "#r2spinner" ).on( "change", function() {  varchange() } );
+function varchange() {
+  // Variable r2 slider and number input types
+  $('#r2slider').slider({ max: 60, min: 20, step: 2 }); // slider initialisation : jQuery widget
+  $('#r2spinner').spinner({ max: 60, min: 20, step: 2 }); // number initialisation : jQuery widget
+  
+  // monitoring change in value and connecting slider and number
+  // setting trace point coordinate arrays to empty on change of link length
+  $("#r2slider").on("slide", function (e, ui) {
+    $('#r2spinner').spinner("value", ui.value);
+    ptx = [];
+    pty = [];
+    updateR3BasedOnR2(ui.value);
+    varupdate();
+  });
+  $("#r2spinner").on("spin", function (e, ui) {
+    $('#r2slider').slider("value", ui.value);
+    ptx = [];
+    pty = [];
+    updateR3BasedOnR2(ui.value);
+    varupdate();
+  });
+  $("#r2spinner").on("change", function () {
+    updateR3BasedOnR2($('#r2spinner').spinner("value"));
+    varupdate();
+  });
 
-//Variable r3 slider and number input types
-$('#r3slider').slider({ max : 240, min : 80, step : 2 });		// slider initialisation : jQuery widget
-$('#r3spinner').spinner({ max : 240, min : 80, step : 2 });		// number initialisation : jQuery widget			
-// monitoring change in value and connecting slider and number
-// setting trace point coordinate arrays to empty on change of link length
-$( "#r3slider" ).on( "slide", function( e, ui ) { $('#r3spinner').spinner("value",ui.value); ptx=[]; pty=[]; } );
-$( "#r3spinner" ).on( "spin", function( e, ui ) { $('#r3slider').slider("value",ui.value); ptx=[]; pty=[]; } );
-$( "#r3spinner" ).on( "change", function() {  varchange() } );
+  // Variable r3 slider and number input types
+  $('#r3slider').slider({ max: 240, min: 80, step: 1 }); // slider initialisation : jQuery widget
+  $('#r3spinner').spinner({ max: 240, min: 80, step: 1 }); // number initialisation : jQuery widget
+  
+  // monitoring change in value and connecting slider and number
+  // setting trace point coordinate arrays to empty on change of link length
+  $("#r3slider").on("slide", function (e, ui) {
+    $('#r3spinner').spinner("value", ui.value);
+    ptx = [];
+    pty = [];
+    varupdate();
+  });
+  $("#r3spinner").on("spin", function (e, ui) {
+    $('#r3slider').slider("value", ui.value);
+    ptx = [];
+    pty = [];
+    varupdate();
+  });
+  $("#r3spinner").on("change", function () {
+    varupdate();
+  });
 
-//Variable theta2 slider and number input types
-$('#theta2slider').slider({ max : 360, min : 0, step : 2 });		// slider initialisation : jQuery widget
-$('#theta2spinner').spinner({ max : 360, min : 0, step : 2 });		// number initialisation : jQuery widget			
-// monitoring change in value and connecting slider and number
-// setting trace point coordinate arrays to empty on change of link length
-$( "#theta2slider" ).on( "slide", function( e, ui ) { $('#theta2spinner').spinner("value",ui.value); ptx=[]; pty=[]; } );
-$( "#theta2spinner" ).on( "spin", function( e, ui ) { $('#theta2slider').slider("value",ui.value); ptx=[]; pty=[]; } );
-$( "#theta2spinner" ).on( "change", function() {  varchange() } );
+  // Variable theta2 slider and number input types
+  $('#theta2slider').slider({ max: 360, min: 0, step: 2 }); // slider initialisation : jQuery widget
+  $('#theta2spinner').spinner({ max: 360, min: 0, step: 2 }); // number initialisation : jQuery widget
+  
+  // monitoring change in value and connecting slider and number
+  // setting trace point coordinate arrays to empty on change of link length
+  $("#theta2slider").on("slide", function (e, ui) {
+    $('#theta2spinner').spinner("value", ui.value);
+    ptx = [];
+    pty = [];
+  });
+  $("#theta2spinner").on("spin", function (e, ui) {
+    $('#theta2slider').slider("value", ui.value);
+    ptx = [];
+    pty = [];
+  });
+  $("#theta2spinner").on("change", function () {
+    varchange();
+  });
 
-//Variable omega2 slider and number input types
-$('#omega2slider').slider({ max : 1.8, min : 0.2, step : 0.2 });		// slider initialisation : jQuery widget
-$('#omega2spinner').spinner({ max : 1.8, min : 0.2, step : 0.2 });		// number initialisation : jQuery widget			
-// monitoring change in value and connecting slider and number
-// setting trace point coordinate arrays to empty on change of link length
-$( "#omega2slider" ).on( "slide", function( e, ui ) { $('#omega2spinner').spinner("value",ui.value); ptx=[]; pty=[]; } );
-$( "#omega2spinner" ).on( "spin", function( e, ui ) { $('#omega2slider').slider("value",ui.value); ptx=[]; pty=[]; } );
-$( "#omega2spinner" ).on( "change", function() {  varchange() } );
+  // Variable omega2 slider and number input types
+  $('#omega2slider').slider({ max: 1.8, min: 0.2, step: 0.2 }); // slider initialisation : jQuery widget
+  $('#omega2spinner').spinner({ max: 1.8, min: 0.2, step: 0.2 }); // number initialisation : jQuery widget
+  
+  // monitoring change in value and connecting slider and number
+  // setting trace point coordinate arrays to empty on change of link length
+  $("#omega2slider").on("slide", function (e, ui) {
+    $('#omega2spinner').spinner("value", ui.value);
+    ptx = [];
+    pty = [];
+  });
+  $("#omega2spinner").on("spin", function (e, ui) {
+    $('#omega2slider').slider("value", ui.value);
+    ptx = [];
+    pty = [];
+  });
+  $("#omega2spinner").on("change", function () {
+    varchange();
+  });
 
-varupdate();
-
+  varupdate();
 }
 
-//Computing of various system parameters
-function varupdate()
-{
+function updateR3BasedOnR2(r2Value) {
+  const maxR3 = Math.ceil(6 * r2Value);
+  const minR3 = Math.ceil(2.5 * r2Value); // Ensure minR3 is also calculated as an integer
 
-$('#r2slider').slider("value", $('#r2spinner').spinner('value'));  //updating slider location with change in spinner(debug)
-$('#r3slider').slider("value", $('#r3spinner').spinner('value'));
-$('#theta2slider').slider("value", $('#theta2spinner').spinner('value')); 
+  $('#r3slider').slider("option", "max", maxR3);
+  $('#r3slider').slider("option", "min", minR3);
+  $('#r3spinner').spinner("option", "max", maxR3);
+  $('#r3spinner').spinner("option", "min", minR3);
 
-r=$('#r2spinner').spinner("value");
-l=$('#r3spinner').spinner("value");
-$('#omega2set').hide(); 
-$('#r3slider').slider({max: 6*$('#r2slider').slider('value')});
-$('#r3slider').slider({min: 2.5*$('#r2slider').slider('value')});
-$('#r3spinner').spinner({max: 6*$('#r2slider').slider('value')});
-$('#r3spinner').spinner({min:2.5*$('#r2slider').slider('value')});
-if(!simstatus)
-{
-$('#theta2slider').slider("disable"); 
-$('#theta2spinner').spinner("disable"); 
-printcomment("",2);
-theta2=theta2+(rotstatus*0.1*deg(omega2));
-theta2=theta2%360;
-if(theta2<0)theta2+=360;
+  const currentR3 = $('#r3spinner').spinner("value");
+  const newR3 = Math.max(minR3, Math.min(maxR3, currentR3));
 
+  $('#r3slider').slider("value", newR3);
+  $('#r3spinner').spinner("value", newR3);
 }
-if(simstatus)
-{
-$('#theta2slider').slider("enable"); 
-$('#theta2spinner').spinner("enable");
-theta2=$('#theta2spinner').spinner("value");
-printcomment("Crank at "+theta2+"&deg; <br>Position of slider from Crank Center = "+roundd(b.xcoord-o.xcoord,2)+"cm",2);
+
+// Computing of various system parameters
+function varupdate() {
+  $('#r2slider').slider("value", $('#r2spinner').spinner('value'));  // updating slider location with change in spinner(debug)
+  $('#r3slider').slider("value", $('#r3spinner').spinner('value'));
+  $('#theta2slider').slider("value", $('#theta2spinner').spinner('value'));
+
+  const r = $('#r2spinner').spinner("value");
+  const l = $('#r3spinner').spinner("value");
+
+  $('#omega2set').hide();
+  $('#r3slider').slider({ max: 6 * $('#r2slider').slider('value') });
+  $('#r3slider').slider({ min: 2.5 * $('#r2slider').slider('value') });
+  $('#r3spinner').spinner({ max: 6 * $('#r2slider').slider('value') });
+  $('#r3spinner').spinner({ min: 2.5 * $('#r2slider').slider('value') });
+
+  if (!simstatus) {
+    $('#theta2slider').slider("disable");
+    $('#theta2spinner').spinner("disable");
+    printcomment("", 2);
+    theta2 = theta2 + (rotstatus * 0.1 * deg(omega2));
+    theta2 = theta2 % 360;
+    if (theta2 < 0) theta2 += 360;
+  }
+
+  if (simstatus) {
+    $('#theta2slider').slider("enable");
+    $('#theta2spinner').spinner("enable");
+    theta2 = $('#theta2spinner').spinner("value");
+    printcomment("Crank at " + theta2 + "&deg; <br>Position of slider from Crank Center = " + roundd(b.xcoord - o.xcoord, 2) + "cm", 2);
+  }
+
+  const phi = deg(Math.asin((r * Math.sin(rad(theta2))) / l));
+  o.xcoord = 0;
+  o.ycoord = 0;
+  a.xcoord = o.xcoord + r * Math.cos(rad(theta2));
+  a.ycoord = o.ycoord + r * Math.sin(rad(theta2));
+  b.xcoord = a.xcoord + l * Math.cos(rad(phi));
+  b.ycoord = o.ycoord;
+
+  printcomment("Limits of l for the set r : " + $('#r3spinner').spinner("option", "min") + " and " + $('#r3spinner').spinner("option", "max") + " ", 1);
+
+  draw();
 }
-phi=deg(Math.asin((r*Math.sin(rad(theta2)))/l));
-o.xcoord=0;
-o.ycoord=0;
-a.xcoord=o.xcoord+r*Math.cos(rad(theta2));
-a.ycoord=o.ycoord+r*Math.sin(rad(theta2));
-b.xcoord=a.xcoord+l*Math.cos(rad(phi));
-b.ycoord=o.ycoord;
 
-printcomment("Limits of l for the set r : "+$('#r3spinner').spinner("option","min")+" and\n "+$('#r3spinner').spinner("option","max")+" ",1);
-
-draw();
-
-}
+// Initial call to setup everything
+$(document).ready(function () {
+  varchange();
+});
 
 //Simulation graphics
 function draw()
@@ -308,7 +376,8 @@ function printcomment(commenttext,commentloc)
   document.getElementById('commentboxright').style.visibility='visible';
   document.getElementById('commentboxleft').style.width='285px';
   document.getElementById('commentboxleft').style.marginLeft = '50px';
-  document.getElementById('commentboxright').style.marginLeft = '50px';
+  
+  document.getElementById('commentboxright').style.marginLeft = '-400px';
   document.getElementById('commentboxleft').innerHTML = commenttext;
   }
   else if(commentloc==2)
