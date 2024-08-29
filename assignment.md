@@ -1,0 +1,1 @@
+1. What is the displacement v/s time curve of the motion of slider in slider crank mechanism?
