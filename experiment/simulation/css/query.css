@@ -29,6 +29,7 @@ em:current font size
   #variables{
     width: 200%;
   }
+  
 }
 
 
@@ -79,6 +80,8 @@ em:current font size
     position: absolute;
     /* left: 450px; */
     bottom:5px;
+    left:450px;
+   
   }
 }
 
@@ -237,6 +240,9 @@ em:current font size
   .copyright{
     margin-bottom: 70px; 
   }
+  #commentboxleft,#commentboxright{
+    font-size: 14px;
+  }
 }
 
 /* **************************** */
@@ -298,6 +304,21 @@ em:current font size
   }
   #variables{
     width: 100%;
+  }
+  #commentboxleft,#commentboxright{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 30em){
+  #commentboxleft,#commentboxright{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 21em){
+  #commentboxleft,#commentboxright{
+    font-size: 11px;
   }
 }
 /* 
